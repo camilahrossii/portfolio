@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Camila Rossi.</title>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/f1544d6345.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/logo-camila.png" class="logo" alt="">
+
+                <ul id="sidemenu">
+                    <li><a class="menu-txt" href="#header">Home</a></li>
+                    <li><a  class="menu-txt" href="#about">Sobre mim</a></li>
+                    <li><a class="menu-txt"  href="#services">Serviços</a></li>
+                    <li><a  class="menu-txt" href="#portfolio">Portfolio</a></li>
+                    <li><a  class="menu-txt" href="#contact">Contato</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <h1>Olá, <br>Eu sou a <span>Camila Rossi</span>.</h1>
+                <p>Estudante de Análise e Desenvolvimento de Sistemas</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- SOBRE MIM -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="./images/about.jpg" alt="Foto Camila">
+                    </div>
+
+                    <div class="about-col-2">
+                        <h1 class="sub-title">Sobre Mim</h1>
+                        <p class="sobre-txt">Meu nome é Camila Rossi, tenho 28 anos e atualmente sou estudante na Centro Universitário UNIFATECIE - EAD, cursando Análise e Desenvolvimento de Sistemas. Atualmente estou no terceiro semestre do curso e estou dedicando meus estudos ao desenvolvimento FullStack. Durante minha trajetória acadêmica, tenho me aprofundado em tecnologias essenciais para o desenvolvimento, como HTML, CSS, JavaScript e Java. Recentemente finalizei o Santander Bootcamp FullStack Java + Angular oferecido pela Digital Innovation One (DIO) em parceria com o Banco Santander onde tive meu primeiro contato com a linguagem de programação Java e o Framework Spring. Sigo me aprofundando ainda mais meus conhecimentos com projetos muito interessantes que você pode encontrar em meu <a href="https://github.com/camilahrossii">GitHub</a>.</p>
+                        
+                        <p class="sobre-txt">Apesar de ainda não possuir experiência profissional em tecnologia, estou em busca de uma oportunidade no mercado de trabalho para aplicar meus conhecimentos e aprimorar minhas habilidades como desenvolvedora. Estou animada para colaborar em projetos desafiadores, aprender com profissionais experientes e contribuir para o sucesso de equipes dinâmicas. Sou uma pessoa dedicada, proativa e apaixonada por aprender coisas novas. Estou empolgada com as possibilidades que a carreira oferece e estou pronta para enfrentar desafios, aprimorar minhas habilidades e crescer profissionalmente. Estou confiante de que, com minha determinação e sede de conhecimento, posso contribuir para o sucesso de projetos e equipes no mundo da tecnologia.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links menu-txt" onclick="opentab('educacao')">Educação</p>
+                            <p class="tab-links menu-txt" onclick="opentab('tecnologias')">Tecnologias</p>
+                            <p class="tab-links menu-txt" onclick="opentab('idiomas')">Idiomas</p>
+                        </div>
+                        <div class="tab-contents active-tab"  id="educacao">
+                            <ul>
+                                <li><span>2023 - 2024</span><br> Análise e Desenvolvimento de Sistemas - Centro Universitário UNIFATECIE</li>
+                                <li><span>2023</span><br>Santander Bootcamp FullStack Java+Angular - Digital Innovation One (DIO)</li>
+                                <li><span>2022</span><br>Curso Front-End Completo - Danki Code</li>
+                                <li><span>2022</span><br>Introdução a Programação - Rocketseat</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents"  id="tecnologias">
+                            <ul>
+                                <li><span>Desenvolvimento Web</span><br> Criação de websites com HTML, CSS, JavaScript e Java</li>
+                                <li><span>Frameworks</span><br> Angular e Spring Boot</li>
+                                <li><span>Linguagens de Programação</span><br> Conhecimentos em JavaScript e Java</li>
+                                <li><span>Outras Tecnologias</span><br> MySQL, GIT e GitHub</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents"  id="idiomas">
+                            <ul>
+                                <li><span>Português</span><br>Falante Nativo</li>
+                                <li><span>Inglês</span><br>Intermediário - B1</li>
+                                <li><span>Italiano</span><br>Básico - A2</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SERVICES -->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">Meus Serviços</h1>
+                <div class="services-list">
+                    <div class="service">
+                        <i class="fa-brands fa-css3"></i>
+                        <h2>Desenvolvimento Front-End</h2>
+                        <p>Transformando conceitos criativos em experiências digitais cativantes. Minha missão é criar interfaces intuitivas e visualmente impressionantes que não apenas encantam os usuários, mas também elevam a funcionalidade de cada projeto.
+                        Seja você um empreendedor em busca de uma presença online impactante ou uma empresa que deseja aprimorar sua plataforma existente, estou aqui para tornar sua visão uma realidade digital notável.</p>
+                        <a href="https://github.com/camilahrossii/">Saiba mais</a>
+                    </div>
+                    <div class="service">
+                        <i class="fa-solid fa-pen-nib"></i>
+                        <h2>Desenvolvimento WordPress</h2>
+                        <p>Ofereço soluções digitais poderosas e cativantes com WordPress, a plataforma de excelência para transformar ideias em sites funcionais. Com conhecimento em design e desenvolvimento, estou comprometida em criar experiências online envolventes que destacam sua visão e impulsionam seu sucesso na web.</p>
+                        <a href="https://github.com/camilahrossii/">Saiba mais</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--Portfolio-->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">Meus Projetos</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="./images/despachante-calmo.png">
+                        <div class="layer">
+                            <h3>Despachante Calmo WebSite</h3>
+                            <p>Website criado com HTML, CSS e Bootstrap. Contém informações sobre os serviços que o estabelecimento fornece, assim como tabela de consultas de Licenciamento, carrosel de imagens do espaço, meios de contato e integrei o Google Maps com a localização do estabelecimento.</p>
+                            <a href="https://despachantecalmo.com.br/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="./images/cartoes-em-foco.png">
+                        <div class="layer">
+                            <h3>Landing Page</h3>
+                            <p>Landing Page estática criada com HTML e CSS para um Canal no Youtube de cartões de crédito. Para cada cartão, inseri a imagem, informações principais e um botão com o link de convite do cartão. Mais abaixo temos o campo de informações sobre o Canal e um botão que leva ao Youtube.</p>
+                            <a href="https://www.cartoesemfoco.com.br/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="./images/blog.png">
+                        <div class="layer">
+                            <h3>Angular Blog</h3>
+                            <p>Esse projeto foi criado com objetivo de estudo de Angular. O Blog foi inteiro criado com Componentes e criei Rotas que levam de um artigo à página inicial.</p>
+                            <a href="https://camilahrossii.github.io/angular-blog/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="./images/formulario-js.png">
+                        <div class="layer">
+                            <h3>Angular Blog</h3>
+                            <p>Formulário de Contato criado com HTML e CSS com validação de todo o formulário em Javascript.</p>
+                            <a href="https://camilahrossii.github.io/formulario_js/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="./images/ebook.png">
+                        <div class="layer">
+                            <h3>Ebook Landing Page</h3>
+                            <p>Landing Page criada com WordPress utilizando o construtor de páginas Elementor.</p>
+                            <a href="https://www.alexhaller.online/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="./images/imobiliaria.png">
+                        <div class="layer">
+                            <h3>Website Imobiliaria</h3>
+                            <p>Site criado com HTML, CSS e Javascript com o objetivo de estudo da linguagem.</p>
+                            <a href="https://camilahrossii.github.io/my-new-home-agency-example/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="https://github.com/camilahrossii/" class="btn">Veja mais</a>
+
+            </div>
+        </div>
+
+        <!--CONTACT-->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contate Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> camilarossi.contact@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i> (11) 93397-1677</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-github"></i></a>
+                        </div>
+                        <a href="./images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Nome" placeholder="Seu Nome" required>
+                            <input type="email" name="email" placeholder="Seu Email" required>
+                            <textarea style="resize: none" name="Mensagem"  rows="6" placeholder="Sua Mensagem"></textarea>
+                            <button type="submit" class="btn btn2">Enviar</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2023 Camila. Made with <i class="fa-regular fa-heart"></i></p>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
